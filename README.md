@@ -6,8 +6,7 @@
 
 ---
 
-<img width="1358" alt="Screenshot 2025-06-13 at 3 28 02 PM" src="https://github.com/user-attachments/assets/4ae7e652-21af-4a9d-a8a8-b116d6532cd3" />
-
+<img width="1491" alt="Screenshot 2025-06-13 at 3 51 36 PM" src="https://github.com/user-attachments/assets/62d31729-78e4-4e18-b0f4-5bf4dd85f10a" />
 ![TScan UI-2](docs/ui-2.jpg)
 ![TScan UI-3](docs/ui-3.jpg)
 
