@@ -8,7 +8,6 @@
 
 <img width="1495" alt="Screenshot 2025-06-13 at 3 53 26 PM" src="https://github.com/user-attachments/assets/3cdafa29-4138-440f-9c68-3d39d6b7d387" />
 <img width="1499" alt="Screenshot 2025-06-13 at 3 55 17 PM" src="https://github.com/user-attachments/assets/94fe19f8-7768-4607-b867-f6c6582aa96e" />
-<img width="1678" alt="Screenshot 2025-06-13 at 3 56 50 PM" src="https://github.com/user-attachments/assets/98bae5fb-3125-4b1f-8de5-5462d8cb25ec" />
 
 ## 🚀 How It Works
 
