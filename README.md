@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="docs/tscan.png" width="100" />
+  <img alt="Logo" src="docs/tscan-v2.png" width="100" />
   <h1><strong>TScan – Inventory Management System</strong></h1>
   <p>Modern inventory control with real-time insights, barcode scanning, and multi-warehouse support</p>
 </div>
