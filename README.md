@@ -7,9 +7,8 @@
 ---
 
 <img width="1495" alt="Screenshot 2025-06-13 at 3 53 26 PM" src="https://github.com/user-attachments/assets/3cdafa29-4138-440f-9c68-3d39d6b7d387" />
-
-![TScan UI-2](docs/ui-2.jpg)
-![TScan UI-3](docs/ui-3.jpg)
+<img width="1499" alt="Screenshot 2025-06-13 at 3 55 17 PM" src="https://github.com/user-attachments/assets/94fe19f8-7768-4607-b867-f6c6582aa96e" />
+<img width="1494" alt="Screenshot 2025-06-13 at 3 55 59 PM" src="https://github.com/user-attachments/assets/97d033f2-b9d6-4636-8b73-cafe50b72a13" />
 
 ## 🚀 How It Works
 
