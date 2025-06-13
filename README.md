@@ -33,13 +33,27 @@ https://github.com/user-attachments/assets/c5885a2d-654d-462c-8595-51917c199668
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Architecture
 
 - **Frontend**: Next.js 15, TypeScript, Tailwind CSS, [shadcn/ui](https://ui.shadcn.com)  
 - **Data Viz**: [Recharts](https://recharts.org/)  
 - **Camera Access**: Native Web APIs  
 
 ---
+
+## Quick Start
+
+### Prerequisites
+
+- Node.js 18+
+
+### Setup
+
+```bash
+npm install
+
+npm run dev
+```
 
 ## 🌐 Browser Compatibility
 
