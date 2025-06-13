@@ -6,6 +6,10 @@
 
 ---
 
+![TScan UI](docs/ui.jpg)
+![TScan UI-2](docs/ui-2.jpg)
+![TScan UI-3](docs/ui-3.jpg)
+
 ## 🚀 How It Works
 
 1. **Manage**: Create warehouses and add items with SKUs, quantities, and locations  
