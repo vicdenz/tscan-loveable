@@ -10,16 +10,19 @@ import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import type { InventoryItem, Warehouse } from "@/lib/types"
 
+// Update the interface to include initialSku
 interface AddItemModalProps {
   warehouses: Warehouse[]
   onClose: () => void
   onAddItem: (item: Omit<InventoryItem, "id" | "lastUpdated">) => void
+  initialSku?: string
 }
 
-export function AddItemModal({ warehouses, onClose, onAddItem }: AddItemModalProps) {
+// Update the function to use initialSku
+export function AddItemModal({ warehouses, onClose, onAddItem, initialSku }: AddItemModalProps) {
   const [formData, setFormData] = useState({
     name: "",
-    sku: "",
+    sku: initialSku || "",
     quantity: "",
     location: "",
     category: "",

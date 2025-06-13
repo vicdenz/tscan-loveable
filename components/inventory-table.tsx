@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Edit, Trash2, ArrowRightLeft, ChevronUp, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Checkbox } from "@/components/ui/checkbox"
 import type { InventoryItem } from "@/lib/types"
 import { formatDate } from "@/lib/utils"
 
@@ -11,14 +12,33 @@ interface InventoryTableProps {
   onEditItem: (item: InventoryItem) => void
   onDeleteItem: (id: string) => void
   onTransferItem: (item: InventoryItem) => void
+  selectedItems: InventoryItem[]
+  onSelectItem: (item: InventoryItem, isSelected: boolean) => void
+  onSelectAllItems: (isSelected: boolean) => void
 }
 
 type SortField = "name" | "sku" | "quantity" | "location" | "category" | "lastUpdated"
 type SortDirection = "asc" | "desc"
 
-export function InventoryTable({ items, onEditItem, onDeleteItem, onTransferItem }: InventoryTableProps) {
+export function InventoryTable({
+  items,
+  onEditItem,
+  onDeleteItem,
+  onTransferItem,
+  selectedItems,
+  onSelectItem,
+  onSelectAllItems,
+}: InventoryTableProps) {
   const [sortField, setSortField] = useState<SortField>("name")
   const [sortDirection, setSortDirection] = useState<SortDirection>("asc")
+
+  const isItemSelected = (id: string) => {
+    return selectedItems.some((item) => item.id === id)
+  }
+
+  const areAllItemsSelected = () => {
+    return items.length > 0 && selectedItems.length === items.length
+  }
 
   const handleSort = (field: SortField) => {
     if (sortField === field) {
@@ -71,6 +91,13 @@ export function InventoryTable({ items, onEditItem, onDeleteItem, onTransferItem
         <table className="w-full">
           <thead className="bg-gray-50 border-b border-gray-200">
             <tr>
+              <th className="p-4">
+                <Checkbox
+                  checked={areAllItemsSelected()}
+                  onCheckedChange={(checked) => onSelectAllItems(!!checked)}
+                  aria-label="Select all items"
+                />
+              </th>
               <th className="text-left p-4 font-semibold text-gray-900">
                 <button
                   onClick={() => handleSort("name")}
@@ -134,8 +161,15 @@ export function InventoryTable({ items, onEditItem, onDeleteItem, onTransferItem
                 key={item.id}
                 className={`border-b border-gray-100 hover:bg-gray-50 transition-colors ${
                   index % 2 === 0 ? "bg-white" : "bg-gray-50/50"
-                }`}
+                } ${isItemSelected(item.id) ? "bg-blue-50" : ""}`}
               >
+                <td className="p-4">
+                  <Checkbox
+                    checked={isItemSelected(item.id)}
+                    onCheckedChange={(checked) => onSelectItem(item, !!checked)}
+                    aria-label={`Select ${item.name}`}
+                  />
+                </td>
                 <td className="p-4">
                   <div className="font-medium text-gray-900">{item.name}</div>
                 </td>
