@@ -55,7 +55,7 @@ npm install
 npm run dev
 ```
 
-#### Deployed @ [](https://tscan.vercel.app/)
+#### Deployed @ [https://tscan.vercel.app/](https://tscan.vercel.app/)
 
 ## 🌐 Browser Compatibility
 
