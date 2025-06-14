@@ -31,8 +31,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: ["test"]
     if: success()
-    environment: production
+    environment: development
     steps:
       - uses: actions/checkout@v3
-      - run: echo "Deploying to vercel production"
+      - run: echo "Deploying to vercel development"
         name: Deploy to vercel
